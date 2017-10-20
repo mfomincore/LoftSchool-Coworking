@@ -6,69 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Comatible" content="ie-edge">
     <title>Project</title>
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/prices-style.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="wrapper">
         <!-- шапка сайта -->
         <header class="header">
-            <div class="container">
+            <div class="container clearfix">
                 <div class="logo">
                     <a href="#"><img src="img/logo.png" alt="Workadium"></a>
                 </div>
                 <div class="contacts">
-                    <div class="contacts__number">8(800)00-329-10</div>
+                    <div class="contacts__number"><a href="tel:8(800)00-329-10" class="contacts__link">8 (800) 00-392-10</a></div>
                     <div class="contacts__worktime"><a href="#" class="contacts__worktime">График работы</a></div>
                 </div>
             </div>
         </header>
         <!-- Боковой сайтбар -->
-        <aside class="sidebar">
-            <ul class="nav">
-                <li class="nav__item">
-                    <a href="#" class="nav__link">
-                        <div class="nav__icon nav__trangle"></div>
-                        <div class="nav__text">Главная</div>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">
-                        <div class="nav__icon nav__cash"></div>
-                        <div class="nav__text">Тарифы</div>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">
-                        <div class="nav__icon nav__star-icon"></div>
-                        <div class="nav__text">Отзывы</div>
-                    </a>
-                </li>
-            </ul>
-        </aside>
-        <!-- Хлебные крошки -->
-        <div class="content">
-            <div class="container">
-                <div class="section">
-                    <ul class="bread_crumbs">
-                        <li class="bread_crumbs-item">
-                            <a href="#" class="bread_crumbs-link bread_crumbs-link-passive">Главная</a>
+        <div class="main-content">
+            <div class="container clearfix">
+                <aside class="sidebar clearfix">
+                    <ul class="nav celarfix">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">
+                                <div class="nav__icon nav__trangle"></div>
+                                <div class="nav__text">Главная</div>
+                            </a>
                         </li>
-                        <li class="bread_crumbs-item">
-                            <a href="#" class="bread_crumbs-link bread_crumbs-link-active">/ Тарифы</a>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <div class="nav__icon nav__cash"></div>
+                                <div class="nav__text_active">Тарифы</div>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <div class="nav__icon nav__star-icon"></div>
+                                <div class="nav__text">Отзывы</div>
+                            </a>
                         </li>
                     </ul>
+                </aside>
+                <!-- Основной контент страницы -->
+                <div class="content">
+                    <!-- Хлебные крошки -->
+                    <div class="bread clearfix">
+                        <ul class="bread__crumbs">
+                            <li class="bread__crumbs-item">
+                                <a href="#" class="bread__crumbs-link bread__crumbs-link-passive">Главная</a>
+                            </li>
+                            <li class="bread__crumbs-item">
+                                <a href="#" class="bread__crumbs-link bread__crumbs-link-active">/ Тарифы</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Заголовок -->
                     <h1 class="title">Тарифы</h1>
-                    <!-- Основной контент страницы -->
-                    <div class="main">
-                        <ul class="items">
+                    <div class="conteiner-items">
+                        <ul class="items clearfix">
                             <li class="items__block">
                                 <div class="items__table">
                                     <div class="items__img items_img-jpg-1">
-                                        <p class="items__title">«Один»</p>
+                                        <div class="items__text">
+                                            <p class="items__title">«ОДИН»</p>
+                                        </div>
                                     </div>
                                     <div class="items__info">
-                                        <p class="items__price">800 руб/мес или 100 руб/сутк</p>
+                                        <p class="items__price">800 руб/мес<br> или 100 руб/сутки</p>
                                         <p class="items__description">Оплачивается рабочее место на 1 человека. Есть возможность оплаты с привязкой к определенному фищическому месту. При оплате за год скидка 30%.</p>
                                     </div>
                                 </div>
@@ -76,10 +81,12 @@
                             <li class="items__block">
                                 <div class="items__table">
                                     <div class="items__img items_img-jpg-2">
-                                        <p class="items__title">«Трое»</p>
+                                        <div class="items__text">
+                                            <p class="items__title">«ТРОЕ»</p>
+                                        </div>
                                     </div>
                                     <div class="items__info">
-                                        <p class="items__price">1500 руб/мес или 200 руб/сутки</p>
+                                        <p class="items__price">1500 руб/мес<br> или 200 руб/сутки</p>
                                         <p class="items__description">Оплачивается стол на 3 рабочих места. При этом можно пользоваться ими как одновременно, так и поочередно, можно пользоваться офисной техникой и выделенным шкафом для документов.</p>
                                     </div>
                                 </div>
@@ -87,7 +94,11 @@
                             <li class="items__block">
                                 <div class="items__table">
                                     <div class="items__img items_img-jpg-3">
-                                        <p class="items__title">«10-10»</p>
+                                        <div class="items__text">
+                                            <div class="items__text">
+                                                <p class="items__title">«10-10»</p>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="items__info">
                                         <p class="items__price">10 000 руб/мес</p>
@@ -98,8 +109,10 @@
                             <li class="items__block">
                                 <div class="items__table">
                                     <div class="items__img items_img-jpg-4">
-                                        <p class="items__special">VIP</p>
-                                        <p class="items__title">«Безлимит на одного»</p>
+                                        <div class="items__text">
+                                            <p class="items__special">VIP</p>
+                                            <p class="items__title">«БЕЗЛИМИТ НА ОДНОГО»</p>
+                                        </div>
                                     </div>
                                     <div class="items__info">
                                         <p class="items__price">2500 руб/мес</p>
@@ -111,8 +124,10 @@
                             <li class="items__block">
                                 <div class="items__table">
                                     <div class="items__img items_img-jpg-5">
-                                        <p class="items__special">VIP</p>
-                                        <p class="items__title">«Все включено»</p>
+                                        <div class="items__text">
+                                            <p class="items__special">VIP</p>
+                                            <p class="items__title">«ВСЕ ВКЛЮЧЕНО»</p>
+                                        </div>
                                     </div>
                                     <div class="items__info">
                                         <p class="items__price">Цена рассчитывается индивидуально</p>
@@ -123,10 +138,12 @@
                             <li class="items__block">
                                 <div class="items__table">
                                     <div class="items__img items_img-jpg-6">
-                                        <p class="items__title">«Переговоры»</p>
+                                        <div class="items__text">
+                                            <p class="items__title">«ПЕРЕГОВОРЫ»</p>
+                                        </div>
                                     </div>
                                     <div class="items__info">
-                                        <p class="items__price">2500 руб/час</p>
+                                        <p class="items__price">2500 руб/час –</p>
                                         <p class="items__description">Аренда среднего зала. Есть возможность бронирования конференц-залов со скидкой до 30% при полной предоплате.</p>
                                     </div>
                                 </div>
@@ -139,19 +156,20 @@
     </div>
     <!-- Подвал -->
     <footer class="footer">
-        <div class="container_items">
-            <div class="footer_items">
-                <span class="footer__items-link"> Сделано с любовью и старанием на курсе "HTML+CSS" <a href="https://loftschool.com/" class="clr_link">В LoftSchool</a></span>
-                <br> Автор работы: <a href="https://github.com/mfomincore" class="clr_link">Михаил Фомин</a>
+        <div class="container">
+            <div class="footer__items clearfix">
+                <div class="footer__items-link">Сделано с любовью и старанием<br> на курсе "HTML+CSS"<a href="https://loftschool.com/" class="footer__link"> в LoftSchool.</a></div>
+                <div class="footer__autor">Автор работы: <a href="https://github.com/mfomincore" class="footer__link">Михаил Фомин</a></div>
             </div>
-            <div class="footer_logo">
-                <a href="#" class="footer__logo-link"></a>
-                <img src="img/logo.png" alt="Воркадиум">
+            <div class="footer__logo clearfix">
+                <a href="#" class="footer__logo-link">
+                    <img src="img/logo.png" alt="Воркадиум"></a>
             </div>
-            <div class="footer_social">
-                <!-- Социалка -->
-                <div class="footer_title">Наши социальные сети
-                    <ul class="footer__social-link">
+            <!-- Социалка -->
+            <div class="footer__social clearfix">
+                <div class="footer__title">Наши социальные сети</div>
+                <div class="footer__social-link">
+                    <ul class="footer__account">
                         <li class="footer__social-vk">
                             <a href="#" alt="Вконтакте"></a>
                         </li>
